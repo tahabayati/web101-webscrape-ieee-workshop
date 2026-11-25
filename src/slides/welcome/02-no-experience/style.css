@@ -1,0 +1,63 @@
+.reveal .no-experience-slide h2 {
+  margin: 0 0 20px;
+  font-size: 64px;
+}
+
+.reveal .no-experience-slide figure {
+  margin: 0;
+}
+
+.reveal .no-experience-slide .experience-graph {
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.reveal .experience-graph img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.reveal .experience-cross {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.experience-cross path {
+  fill: none;
+  stroke: #d92332;
+  stroke-width: 12;
+  stroke-linecap: round;
+}
+
+.reveal .no-experience-slide .curiosity-message {
+  margin: 20px 0 16px;
+  font-size: 34px;
+}
+
+.reveal .curiosity-cats {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.reveal .curiosity-cats img {
+  display: block;
+  width: 210px;
+  height: 230px;
+  max-width: 100%;
+  max-height: none;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.reveal .curiosity-cats figcaption {
+  font-size: 24px;
+  line-height: 1.4;
+}

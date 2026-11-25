@@ -1,0 +1,16 @@
+.reveal {
+  --r-main-font: var(--font-body);
+  --r-heading-font: var(--font-heading);
+  --r-code-font: var(--font-code);
+  --r-heading-font-weight: 400;
+  --r-heading-text-transform: none;
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow: none;
+}
+
+.reveal pre code {
+  padding: 1rem;
+}

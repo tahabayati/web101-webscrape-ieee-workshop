@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/live/books.html", "destination": "https://books.toscrape.com/index.html" }
+  ]
+}

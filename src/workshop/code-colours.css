@@ -1,0 +1,17 @@
+/* One palette for editors and code samples, so a colour always means the same kind of thing. */
+.reveal pre code.hljs { background: #211832; color: #fff; }
+
+/* Command words and HTML tag names. */
+:is(.hljs-keyword, .hljs-name, .hljs-selector-tag) { color: #ff7ab8; }
+
+/* Names of things: attributes, CSS properties and selectors, functions. */
+:is(.hljs-attr, .hljs-attribute, .hljs-title, .hljs-built_in, .hljs-selector-id, .hljs-selector-class, .hljs-property) { color: #72d6ff; }
+
+/* Values: text in quotes and numbers. */
+:is(.hljs-string, .hljs-number, .hljs-literal) { color: #ffd866; }
+
+/* Notes for people. The computer skips comments. */
+:is(.hljs-comment, .hljs-meta) { color: #a89fc4; }
+
+/* Punctuation stays readable: beginners need to see every bracket and colon. */
+:is(.hljs-tag, .hljs-punctuation, .hljs-operator) { color: #d5cfee; }
