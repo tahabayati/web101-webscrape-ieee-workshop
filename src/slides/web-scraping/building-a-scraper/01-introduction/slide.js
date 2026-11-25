@@ -16,7 +16,7 @@ for card in cards[:3]:
     Say: 'select returns every match. for repeats the indented lines once per card. [:3] means only the first three.',
     Demo: 'Run it. Point at the four spaces that put lines inside the loop.',
     Ask: 'Predict the number of rows before each run.',
-    Expect: '3 rows, then 5, then 20 (8 if the status says saved copy).',
+    Expect: '3 rows, then 5, then 20 (8 on the saved copy).',
     'Common error': 'IndentationError means a line inside the loop lost its spaces.',
   })),
 

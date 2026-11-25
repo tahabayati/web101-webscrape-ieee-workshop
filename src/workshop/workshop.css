@@ -100,12 +100,7 @@
 .reveal .lab-pane .lab-output { white-space: pre-wrap; overflow-wrap: anywhere; }
 .reveal .python-lab :is(textarea, .lab-output) { height: 405px; }
 .python-lab .lab-body { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); }
-.reveal .workshop-slide .source-label {
-  font-size: 18px;
-  background: #fff1c2;
-  padding: 6px 10px;
-  margin: 0 0 10px;
-}
+.reveal .workshop-slide .source-label { margin: 0 0 10px; font-size: 22px; }
 .lab-pane iframe { background: #fff; }
 .lab-actions { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
 .lab-actions button {
@@ -291,6 +286,14 @@
 .reveal .workshop-slide ul.tiles.two { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0 0 20px; font-size: 25px; }
 .reveal .workshop-slide .tiles.two li { padding: 18px 12px; }
 .reveal .tiles.two .tile-icon { margin-bottom: 8px; font-size: 30px; }
+
+.reveal .workshop-slide .club-link { margin: 0 0 10px; text-align: center; font-size: 36px; }
+.reveal .workshop-slide .club-link + h2 { margin-bottom: 30px; text-align: center; }
+.reveal .qr-codes { display: flex; justify-content: center; gap: 70px; text-align: center; }
+.reveal .qr-codes figure { width: 500px; margin: 0; }
+.reveal .qr-codes img { display: block; width: 340px; height: 340px; margin: 0 auto 14px; }
+.reveal .qr-codes strong { display: block; font-size: 32px; }
+.reveal .qr-codes a { display: block; font-size: 19px; line-height: 1.35; overflow-wrap: anywhere; }
 
 .reveal .html-intro { display: grid; grid-template-columns: 1fr 560px; align-items: center; gap: 44px; }
 .reveal .html-intro .html-logo { display: block; width: 190px; margin: 0 0 24px; }

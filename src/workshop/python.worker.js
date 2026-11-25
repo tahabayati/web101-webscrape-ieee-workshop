@@ -38,9 +38,9 @@ async function getBooks({ live, sample }) {
   try {
     const html = await fetchText(live)
     // Some hosts answer 200 with their own page for unknown paths, so look for book cards.
-    if (html.includes('product_pod')) return (livePage = { html, source: 'live site' })
+    if (html.includes('product_pod')) return (livePage = { html })
   } catch {}
-  return { html: await fetchText(sample), source: 'saved copy, live site unreachable' }
+  return { html: await fetchText(sample), saved: true }
 }
 
 self.onmessage = async ({ data: { code, pages, preload } }) => {
@@ -77,9 +77,8 @@ self.onmessage = async ({ data: { code, pages, preload } }) => {
       result?.destroy?.()
       // Emit a final line that was printed with end="".
       runtime.runPython('import os, sys; sys.stdout.flush(); os.fsync(1)')
-      const status = books
-        ? `Finished · ${books.source} (${books.html.split('class="product_pod"').length - 1} books)`
-        : 'Finished.'
+      // Say nothing when all went well. Do say when the numbers come from the saved copy.
+      const status = books?.saved ? 'Live site unreachable: using a saved copy of 8 books.' : ''
       self.postMessage({ output, status, ok: true })
     } catch (error) {
       self.postMessage({ output: output + readableError(error.message), status: 'Python found a problem. Read the last line.' })

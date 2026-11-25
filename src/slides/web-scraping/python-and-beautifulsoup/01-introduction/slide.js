@@ -49,7 +49,7 @@ print(soup.h1.get_text(strip=True))`,
     'Press <strong>Run Python</strong>. Then change <code>h1</code> to <code>title</code> and run again.'),
   cues('1:11–1:15 · First Python', {
     Say: 'Python runs from top to bottom. Line 1 borrows a tool called BeautifulSoup. It turns HTML text into soup, which we can search.',
-    Demo: 'The deck puts the shop home page into html. Run the code and point at the status line: it says live site or saved copy.',
+    Demo: 'The deck puts the shop home page into html. Run the code. A message under it appears only if the saved copy was used.',
     Ask: 'Everyone press Run Python, then try title.',
     Expect: 'All products, then All products | Books to Scrape - Sandbox. On the saved copy the second line names the sample.',
   }), { id: 'parse' }),

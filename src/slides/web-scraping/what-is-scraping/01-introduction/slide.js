@@ -10,7 +10,7 @@ export default [
       <img class="meme-image" src="${laptopMeltdown}" alt="A blue doodle of someone melting into a puddle over their laptop">
     </div>
   `, cues('0:54–1:04 · Break', {
-    Do: 'Leave this slide open. Showing it downloads Python in the background. Press Run Python on step 1 to check that the status says live site.',
+    Do: 'Leave this slide open. Showing it downloads Python in the background. Press Run Python on step 1. No message under the code means the live page loaded.',
     Ask: 'Invite anyone stuck on DevTools to get help now.',
   }), { id: 'break' }),
 
@@ -44,6 +44,6 @@ export default [
   `, cues('1:05–1:07 · Show the target', {
     Say: 'This table is what we will make. Your browser may not read another website directly, so this site passes the shop page to the editor.',
     Demo: 'Match the first card to the first row.',
-    Note: 'If the live page cannot be reached, the editor uses a saved copy of 8 books and says so under the code.',
+    Note: 'If the live page cannot be reached, the editor uses a saved copy of 8 books and says so under the buttons.',
   }), { id: 'goal' }),
 ].join('')

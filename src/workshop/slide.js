@@ -37,8 +37,7 @@ export function pythonLab(id, source, task, { download, books = true } = {}) {
   return `
     <p class="lab-task">${task}</p>
     <div class="code-lab python-lab" id="${id}" data-language="Python"${books ? ` data-live-url="${liveUrl}" data-sample-url="${sampleUrl}"` : ''} data-prevent-swipe data-ui>
-      ${books ? `<p class="source-label"><code>html</code> holds the Books to Scrape home page.
-        <a href="${booksUrl}" target="_blank" rel="noopener">Open the site ↗</a></p>` : ''}
+      ${books ? `<p class="source-label"><a href="${booksUrl}" target="_blank" rel="noopener">books.toscrape.com</a></p>` : ''}
       <div class="lab-body">
         <div class="lab-pane">
           <span>main.py</span>
@@ -53,8 +52,7 @@ export function pythonLab(id, source, task, { download, books = true } = {}) {
         <button type="button" data-action="run">Run Python</button>
         <button type="button" data-action="reset">Reset</button>
         ${download ? `<button type="button" data-action="download" data-filename="${download}" disabled>Download CSV</button>` : ''}
-        <span class="lab-status" role="status">Ready to run.</span>
-        <span class="lab-keys">Tab indents · Click outside to use ← →</span>
+        <span class="lab-status" role="status"></span>
       </div>
     </div>
   `

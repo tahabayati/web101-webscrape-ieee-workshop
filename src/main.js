@@ -12,6 +12,7 @@ import { setupFrontEndLabs } from './workshop/front-end-labs.js'
 import welcome from './slides/welcome/slide.js'
 import noExperience from './slides/welcome/02-no-experience/slide.js'
 import workspace from './slides/welcome/03-your-workspace/slide.js'
+import scanToStart from './slides/welcome/04-scan-to-start/slide.js'
 import howTheWebWorks from './slides/web101/how-the-web-works/01-introduction/slide.js'
 import browsersAndServers from './slides/web101/browsers-and-servers/01-introduction/slide.js'
 import htmlBasics from './slides/web101/html-basics/slide.js'
@@ -30,6 +31,7 @@ import closing from './slides/closing/slide.js'
 const slides = [
   welcome,
   noExperience,
+  scanToStart,
   workspace,
   howTheWebWorks,
   browsersAndServers,
